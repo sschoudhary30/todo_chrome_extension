@@ -1,8 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "Todo New Tab",
+  "name": "Do✔",
   "version": "1.0.0",
   "description": "A simple todo list extension for your new tab page.",
+  "action": {
+    "default_icon": {
+      "16": "Do.jpg",
+      "48": "Do.jpg",
+      "128": "Do.jpg"
+    }
+  },
+  "icons": {
+    "16": "Do.jpg",
+    "48": "Do.jpg",
+    "128": "Do.jpg"
+  },
   "chrome_url_overrides": { "newtab": "index.html" },
   "permissions": ["storage", "tabs"]
 }
