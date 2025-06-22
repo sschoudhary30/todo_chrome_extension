@@ -45,7 +45,7 @@ Transform your Chrome new-tab into a productive workspace. Create, prioritize, c
 ```bash
 # Clone the repo and install
 git clone https://github.com/sschoudhary30/todo_chrome_extension.git
-cd todo-newtab-extension
+cd todo-chrome-extension
 npm install
 # Build and load
 npm run build
