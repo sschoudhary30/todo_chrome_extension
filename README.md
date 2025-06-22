@@ -1,4 +1,4 @@
-# 📋 Todo New Tab
+# Do✔
 
 **A Sleek Todo List Extension Right in Your Browser’s New Tab**
 
