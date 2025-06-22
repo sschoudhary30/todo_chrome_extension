@@ -1,12 +1,52 @@
-# React + Vite
+# 📋 Todo New Tab
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A Sleek Todo List Extension Right in Your Browser’s New Tab**
 
-Currently, two official plugins are available:
+Transform your Chrome new-tab into a productive workspace. Create, prioritize, complete, and delete tasks seamlessly—then jump back to your familiar Google page with one click.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌟 Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🆕 **Native New-Tab Override**  
+  Your tasks greet you every time you open a new tab.
+
+- 📝 **Add & Delete Todos**  
+  Quickly jot down tasks, assign priorities (Low, Medium, High), and remove them when done.
+
+- ✅ **Mark as Done**  
+  Check off completed tasks with a subtle strike-through animation.
+
+- 🎨 **Priority-Color Coding**  
+  Cards change border colors (green, yellow, red) based on priority.
+
+- 🎵 **Smooth Animations**  
+  Framer Motion handles entrance, exit, and layout transitions for a polished feel.
+
+- 🚀 **One-Click Google Redirect**  
+  A gradient-bordered “Google Search” button at top-center opens Chrome’s built-in new-tab page (`chrome://new-tab-page`) and closes the todo tab.
+
+- 💾 **Persistent Storage**  
+  Tasks are saved locally via `chrome.storage`, so your list survives browser restarts.
+
+- 🛡️ **Privacy-First**  
+  All data stays in your browser—no external servers involved.
+
+---
+
+## 🚀 Installation
+
+### Chrome Web Store (Future)
+1. Publish your extension under the name **Todo New Tab**.  
+2. Users click **Add to Chrome** → **Add extension**.  
+3. Every new tab shows your todo interface.
+
+### Developer Mode
+```bash
+# Clone the repo and install
+git clone https://github.com/your-username/todo-newtab-extension.git
+cd todo-newtab-extension
+npm install
+# Build and load
+npm run build
+# In Chrome, go to chrome://extensions, enable Developer mode, and Load unpacked → select the "dist/" folder
