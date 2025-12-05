@@ -23,15 +23,31 @@ const Background = () => (
       ].map((item, index) => (
         <motion.img
           key={index}
-          initial={{ opacity: 0, scale: 0, y: 50 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
+          initial={{
+            x: -(index - 1.5) * 104, // Start at center
+            y: 50, // Start slightly lower
+            rotate: (index % 2 === 0 ? 10 : -10) * (index + 1), // Random-ish rotation
+            scale: 0.5, // Start small
+            opacity: 0,
+          }}
+          animate={{
+            x: 0,
+            y: 0,
+            rotate: 0,
+            scale: 1,
+            opacity: 1,
+          }}
           transition={{
             type: "spring",
-            stiffness: 260,
-            damping: 20,
-            delay: index * 0.15,
+            stiffness: 150,
+            damping: 12, // Bouncy
+            mass: 0.8,
+            delay: 0.5 + index * 0.1, // Staggered release
           }}
           whileHover={{ scale: 1.2, rotate: 5, zIndex: 10 }}
+          drag
+          dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+          dragElastic={0.2}
           className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer"
           src={item.src}
           alt={item.alt}
